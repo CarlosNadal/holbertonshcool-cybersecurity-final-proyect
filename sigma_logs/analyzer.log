@@ -1,0 +1,219 @@
+2025-05-19 01:01:51,089 [INFO] 🚀 Starting Sigma Analyzer (File Mode)
+2025-05-19 01:01:51,091 [INFO] Configuration: {
+  "LOG_DIR": "/var/log/sigma",
+  "COMPILED_RULES_DIR": "./compiled",
+  "INPUT_FILE": "/app/logs/scanner/mail_scanner.json",
+  "USE_FILE_INPUT": true,
+  "QUERY_WINDOW": 5,
+  "SLEEP_INTERVAL": 300,
+  "ALERT_WEBHOOK": "",
+  "LOG_LEVEL": "INFO"
+}
+2025-05-19 01:01:51,095 [INFO] Analyzing logs from 2025-05-19 03:56:51.092729+00:00 to 2025-05-19 04:01:51.095056+00:00
+2025-05-19 01:01:51,096 [INFO] Sleeping for 300 seconds
+2025-05-19 01:06:31,624 [INFO] Analyzing logs from 2025-05-19 04:01:51.095056+00:00 to 2025-05-19 04:06:31.624347+00:00
+2025-05-19 01:06:31,626 [INFO] Sleeping for 300 seconds
+2025-05-19 01:10:34,771 [INFO] 🚀 Starting Sigma Analyzer (File Mode)
+2025-05-19 01:10:34,773 [INFO] Configuration: {
+  "LOG_DIR": "/var/log/sigma",
+  "COMPILED_RULES_DIR": "./compiled",
+  "INPUT_FILE": "/app/logs/scanner/mail_scanner.json",
+  "USE_FILE_INPUT": true,
+  "QUERY_WINDOW": 5,
+  "SLEEP_INTERVAL": 300,
+  "ALERT_WEBHOOK": "",
+  "LOG_LEVEL": "INFO"
+}
+2025-05-19 01:10:34,776 [INFO] Analyzing logs from 2025-05-19 04:05:34.774779+00:00 to 2025-05-19 04:10:34.776695+00:00
+2025-05-19 01:10:34,778 [INFO] Sleeping for 300 seconds
+2025-05-19 01:14:12,998 [INFO] 🚀 Starting Sigma Analyzer (File Mode)
+2025-05-19 01:14:13,000 [INFO] Configuration: {
+  "LOG_DIR": "/var/log/sigma",
+  "COMPILED_RULES_DIR": "./compiled",
+  "INPUT_FILE": "/app/logs/scanner/mail_scanner.json",
+  "USE_FILE_INPUT": true,
+  "QUERY_WINDOW": 5,
+  "SLEEP_INTERVAL": 300,
+  "ALERT_WEBHOOK": "",
+  "LOG_LEVEL": "INFO"
+}
+2025-05-19 01:14:13,005 [INFO] Analyzing logs from 2025-05-19 04:09:13.002666+00:00 to 2025-05-19 04:14:13.005006+00:00
+2025-05-19 01:14:13,007 [INFO] Sleeping for 300 seconds
+2025-05-19 01:18:53,209 [INFO] Analyzing logs from 2025-05-19 04:14:13.005006+00:00 to 2025-05-19 04:18:53.209366+00:00
+2025-05-19 01:18:53,211 [INFO] Sleeping for 300 seconds
+2025-05-19 01:23:33,200 [INFO] Analyzing logs from 2025-05-19 04:18:53.209366+00:00 to 2025-05-19 04:23:33.199727+00:00
+2025-05-19 01:23:33,202 [INFO] Sleeping for 300 seconds
+2025-05-19 01:28:17,963 [INFO] Analyzing logs from 2025-05-19 04:23:33.199727+00:00 to 2025-05-19 04:28:17.963789+00:00
+2025-05-19 01:28:17,967 [INFO] Sleeping for 300 seconds
+2025-05-19 01:33:12,050 [INFO] Analyzing logs from 2025-05-19 04:28:17.963789+00:00 to 2025-05-19 04:33:12.049729+00:00
+2025-05-19 01:33:12,054 [INFO] Sleeping for 300 seconds
+2025-05-19 01:38:08,799 [INFO] Analyzing logs from 2025-05-19 04:33:12.049729+00:00 to 2025-05-19 04:38:08.799540+00:00
+2025-05-19 01:38:08,801 [INFO] Sleeping for 300 seconds
+2025-05-19 01:39:54,968 [INFO] 🚀 Starting Sigma Analyzer (File Mode)
+2025-05-19 01:39:54,969 [INFO] Configuration: {
+  "LOG_DIR": "/var/log/sigma",
+  "COMPILED_RULES_DIR": "./compiled",
+  "INPUT_FILE": "/app/logs/scanner/mail_scanner.json",
+  "USE_FILE_INPUT": true,
+  "QUERY_WINDOW": 5,
+  "SLEEP_INTERVAL": 300,
+  "ALERT_WEBHOOK": "",
+  "LOG_LEVEL": "INFO"
+}
+2025-05-19 01:39:54,972 [INFO] Analyzing logs from 2025-05-19 04:34:54.970959+00:00 to 2025-05-19 04:39:54.972874+00:00
+2025-05-19 01:39:54,974 [INFO] Sleeping for 300 seconds
+2025-05-19 01:44:54,376 [INFO] Analyzing logs from 2025-05-19 04:39:54.972874+00:00 to 2025-05-19 04:44:54.375623+00:00
+2025-05-19 01:44:54,378 [INFO] Sleeping for 300 seconds
+2025-05-19 01:45:28,243 [INFO] 🚀 Starting Sigma Analyzer (File Mode)
+2025-05-19 01:45:28,245 [INFO] Configuration: {
+  "LOG_DIR": "/var/log/sigma",
+  "COMPILED_RULES_DIR": "./compiled",
+  "INPUT_FILE": "/app/logs/scanner/mail_scanner.json",
+  "USE_FILE_INPUT": true,
+  "QUERY_WINDOW": 5,
+  "SLEEP_INTERVAL": 300,
+  "ALERT_WEBHOOK": "",
+  "LOG_LEVEL": "INFO"
+}
+2025-05-19 01:45:28,250 [INFO] Analyzing logs from 2025-05-19 04:40:28.247185+00:00 to 2025-05-19 04:45:28.250748+00:00
+2025-05-19 01:45:28,253 [INFO] Sleeping for 300 seconds
+2025-05-19 01:45:44,486 [INFO] Shutdown requested by user
+2025-05-19 01:45:44,488 [INFO] Sigma Analyzer stopped
+2025-05-19 01:49:54,103 [INFO] Analyzing logs from 2025-05-19 04:44:54.375623+00:00 to 2025-05-19 04:49:54.103746+00:00
+2025-05-19 01:49:54,105 [INFO] Sleeping for 300 seconds
+2025-05-19 01:54:53,868 [INFO] Analyzing logs from 2025-05-19 04:49:54.103746+00:00 to 2025-05-19 04:54:53.868749+00:00
+2025-05-19 01:54:53,871 [INFO] Sleeping for 300 seconds
+2025-05-19 01:57:04,405 [INFO] 🚀 Starting Sigma Analyzer (File Mode)
+2025-05-19 01:57:04,406 [INFO] Configuration: {
+  "LOG_DIR": "/var/log/sigma",
+  "COMPILED_RULES_DIR": "./compiled",
+  "INPUT_FILE": "/app/logs/scanner/mail_scanner.json",
+  "USE_FILE_INPUT": true,
+  "QUERY_WINDOW": 60,
+  "SLEEP_INTERVAL": 3600,
+  "ALERT_WEBHOOK": "",
+  "LOG_LEVEL": "INFO"
+}
+2025-05-19 01:57:04,411 [INFO] Analyzing logs from 2025-05-19 03:57:04.408475+00:00 to 2025-05-19 04:57:04.410956+00:00
+2025-05-19 01:57:04,412 [INFO] Sleeping for 3600 seconds
+2025-05-19 05:16:14,473 [INFO] 🚀 Starting Sigma Analyzer (File Mode)
+2025-05-19 05:16:14,497 [INFO] Configuration: {
+  "LOG_DIR": "/var/log/sigma",
+  "COMPILED_RULES_DIR": "./compiled",
+  "INPUT_FILE": "/app/logs/scanner/mail_scanner.json",
+  "USE_FILE_INPUT": true,
+  "QUERY_WINDOW": 60,
+  "SLEEP_INTERVAL": 3600,
+  "ALERT_WEBHOOK": "",
+  "LOG_LEVEL": "INFO"
+}
+2025-05-19 05:16:14,524 [INFO] Analyzing logs from 2025-05-19 07:16:14.503181+00:00 to 2025-05-19 08:16:14.524574+00:00
+2025-05-19 05:16:14,528 [INFO] Sleeping for 3600 seconds
+2025-05-19 05:18:22,629 [INFO] 🚀 Starting Sigma Analyzer (File Mode)
+2025-05-19 05:18:22,631 [INFO] Configuration: {
+  "LOG_DIR": "/var/log/sigma",
+  "COMPILED_RULES_DIR": "./compiled",
+  "INPUT_FILE": "/app/logs/scanner/mail_scanner.json",
+  "USE_FILE_INPUT": true,
+  "QUERY_WINDOW": 60,
+  "SLEEP_INTERVAL": 3600,
+  "ALERT_WEBHOOK": "",
+  "LOG_LEVEL": "INFO"
+}
+2025-05-19 05:18:22,636 [INFO] Analyzing logs from 2025-05-19 07:18:22.633233+00:00 to 2025-05-19 08:18:22.636307+00:00
+2025-05-19 05:18:22,637 [INFO] Sleeping for 3600 seconds
+2025-05-19 05:24:19,572 [INFO] 🚀 Starting Sigma Analyzer (File Mode)
+2025-05-19 05:24:19,574 [INFO] Configuration: {
+  "LOG_DIR": "/var/log/sigma",
+  "COMPILED_RULES_DIR": "./compiled",
+  "INPUT_FILE": "/app/logs/scanner/mail_scanner.json",
+  "USE_FILE_INPUT": true,
+  "QUERY_WINDOW": 60,
+  "SLEEP_INTERVAL": 3600,
+  "ALERT_WEBHOOK": "",
+  "LOG_LEVEL": "INFO"
+}
+2025-05-19 05:24:19,579 [INFO] Analyzing logs from 2025-05-19 07:24:19.576095+00:00 to 2025-05-19 08:24:19.579615+00:00
+2025-05-19 05:24:19,582 [INFO] Sleeping for 3600 seconds
+2025-05-19 05:28:49,598 [INFO] Shutdown requested by user
+2025-05-19 05:28:49,601 [INFO] Sigma Analyzer stopped
+2025-05-19 05:34:13,714 [INFO] 🚀 Starting Sigma Analyzer (File Mode)
+2025-05-19 05:34:13,716 [INFO] Configuration: {
+  "LOG_DIR": "/var/log/sigma",
+  "COMPILED_RULES_DIR": "./compiled",
+  "INPUT_FILE": "/app/logs/scanner/mail_scanner.json",
+  "USE_FILE_INPUT": true,
+  "QUERY_WINDOW": 60,
+  "SLEEP_INTERVAL": 3600,
+  "ALERT_WEBHOOK": "",
+  "LOG_LEVEL": "INFO"
+}
+2025-05-19 05:34:13,724 [INFO] Analyzing logs from 2025-05-19 07:34:13.719747+00:00 to 2025-05-19 08:34:13.723927+00:00
+2025-05-19 05:34:13,726 [INFO] Sleeping for 3600 seconds
+2025-05-19 05:57:19,432 [INFO] 🚀 Starting Sigma Analyzer (File Mode)
+2025-05-19 05:57:19,434 [INFO] Configuration: {
+  "LOG_DIR": "/var/log/sigma",
+  "COMPILED_RULES_DIR": "./compiled",
+  "INPUT_FILE": "/app/logs/scanner/mail_scanner.json",
+  "USE_FILE_INPUT": true,
+  "QUERY_WINDOW": 60,
+  "SLEEP_INTERVAL": 3600,
+  "ALERT_WEBHOOK": "",
+  "LOG_LEVEL": "INFO"
+}
+2025-05-19 05:57:19,439 [INFO] Analyzing logs from 2025-05-19 07:57:19.436554+00:00 to 2025-05-19 08:57:19.439108+00:00
+2025-05-19 05:57:19,440 [INFO] Sleeping for 3600 seconds
+2025-05-19 06:02:14,876 [INFO] 🚀 Starting Sigma Analyzer (File Mode)
+2025-05-19 06:02:14,879 [INFO] Configuration: {
+  "LOG_DIR": "/var/log/sigma",
+  "COMPILED_RULES_DIR": "./compiled",
+  "INPUT_FILE": "/app/logs/scanner/mail_scanner.json",
+  "USE_FILE_INPUT": true,
+  "QUERY_WINDOW": 60,
+  "SLEEP_INTERVAL": 3600,
+  "ALERT_WEBHOOK": "",
+  "LOG_LEVEL": "INFO"
+}
+2025-05-19 06:02:14,884 [INFO] Analyzing logs from 2025-05-19 08:02:14.881301+00:00 to 2025-05-19 09:02:14.884208+00:00
+2025-05-19 06:02:14,886 [INFO] Sleeping for 3600 seconds
+2025-05-19 06:05:33,919 [INFO] 🚀 Starting Sigma Analyzer (File Mode)
+2025-05-19 06:05:33,922 [INFO] Configuration: {
+  "LOG_DIR": "/var/log/sigma",
+  "COMPILED_RULES_DIR": "./compiled",
+  "INPUT_FILE": "/app/logs/scanner/mail_scanner.json",
+  "USE_FILE_INPUT": true,
+  "QUERY_WINDOW": 60,
+  "SLEEP_INTERVAL": 3600,
+  "ALERT_WEBHOOK": "",
+  "LOG_LEVEL": "INFO"
+}
+2025-05-19 06:05:33,926 [INFO] Analyzing logs from 2025-05-19 08:05:33.923988+00:00 to 2025-05-19 09:05:33.926493+00:00
+2025-05-19 06:05:33,928 [INFO] Sleeping for 3600 seconds
+2025-05-19 06:19:34,836 [INFO] 🚀 Starting Sigma Analyzer (File Mode)
+2025-05-19 06:19:34,839 [INFO] Configuration: {
+  "LOG_DIR": "/var/log/sigma",
+  "COMPILED_RULES_DIR": "./compiled",
+  "INPUT_FILE": "/app/logs/scanner/mail_scanner.json",
+  "USE_FILE_INPUT": true,
+  "QUERY_WINDOW": 60,
+  "SLEEP_INTERVAL": 3600,
+  "ALERT_WEBHOOK": "",
+  "LOG_LEVEL": "INFO"
+}
+2025-05-19 06:19:34,848 [INFO] Analyzing logs from 2025-05-19 08:19:34.842240+00:00 to 2025-05-19 09:19:34.848387+00:00
+2025-05-19 06:19:34,850 [INFO] Sleeping for 3600 seconds
+2025-05-19 06:43:11,296 [INFO] 🚀 Starting Sigma Analyzer (File Mode)
+2025-05-19 06:43:11,299 [INFO] Configuration: {
+  "LOG_DIR": "/var/log/sigma",
+  "COMPILED_RULES_DIR": "./compiled",
+  "INPUT_FILE": "/app/logs/scanner/mail_scanner.json",
+  "USE_FILE_INPUT": true,
+  "QUERY_WINDOW": 60,
+  "SLEEP_INTERVAL": 3600,
+  "ALERT_WEBHOOK": "",
+  "LOG_LEVEL": "INFO"
+}
+2025-05-19 06:43:11,307 [INFO] Analyzing logs from 2025-05-19 08:43:11.302836+00:00 to 2025-05-19 09:43:11.307866+00:00
+2025-05-19 06:43:11,310 [INFO] Sleeping for 3600 seconds
+2025-05-19 07:39:21,063 [INFO] Analyzing logs from 2025-05-19 09:43:11.307866+00:00 to 2025-05-19 10:39:21.056004+00:00
+2025-05-19 07:39:21,082 [INFO] Sleeping for 3600 seconds

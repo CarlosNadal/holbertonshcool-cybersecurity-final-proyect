@@ -1,0 +1,16 @@
+title: Survey Phishing Lure
+id: 9dae1e89-aaaa-4902-a14c-efb4e7cd51c3
+description: Detects survey-based phishing attempts
+logsource:
+  product: email_security
+  service: scanner
+detection:
+  selection:
+    - '*Threats: Survey_Lure*'
+  condition: selection
+fields:
+  - quarantined_file
+  - detected_threats
+falsepositives:
+  - Legitimate survey requests
+level: medium

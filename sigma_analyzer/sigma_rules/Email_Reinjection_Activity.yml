@@ -1,0 +1,15 @@
+title: Email Reinjection Activity
+id: b2c803ee-e0d7-462f-932a-be69a9b735ac 
+description: Detects successful email reinjections
+logsource:
+  product: email_security
+  service: scanner
+detection:
+  selection:
+    - '*Email reinjected successfully*'
+  condition: selection
+fields:
+  - log_message
+falsepositives:
+  - Normal system operation after cleaning legitimate emails
+level: low

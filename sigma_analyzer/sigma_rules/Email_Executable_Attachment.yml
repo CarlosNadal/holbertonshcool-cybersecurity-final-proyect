@@ -1,0 +1,17 @@
+title: Email with Executable Attachment
+id: ed26c71c-4e1b-4973-8ee7-6a8b0ad098cf
+status: stable
+description: Detection of emails containing executable attachments
+logsource:
+  product: email_scanner
+detection:
+  selection:
+    attachments[].type|contains:
+      - 'application/x-msdownload'
+      - 'application/x-dosexec'
+      - 'application/x-sh'
+  condition: selection
+level: medium
+tags:
+  - attack.initial_access
+  - attack.t1193

@@ -1,0 +1,19 @@
+title: Email Containing YARA-Detected Threat
+id: 7d766434-4b5e-4ee8-9399-f91932d66b56
+status: experimental
+description: Detection of emails matching known malicious patterns via YARA
+logsource:
+  product: email_scanner
+detection:
+  selection:
+    yara_matches|contains:
+      - 'Phishing_'
+      - 'Malware_'
+      - 'Ransomware_'
+  condition: selection
+falsepositives:
+  - Legitimate emails matching generic patterns
+level: high
+tags:
+  - attack.initial_access
+  - attack.t1566

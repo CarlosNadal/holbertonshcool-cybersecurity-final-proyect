@@ -1,0 +1,490 @@
+May 19 06:42:43 email-threat-docker postfix/postfix-script[72]: warning: group or other writable: /etc/postfix/./main.cf
+May 19 06:42:43 email-threat-docker postfix/postfix-script[73]: warning: group or other writable: /etc/postfix/./master.cf
+May 19 06:42:43 email-threat-docker postfix/postfix-script[74]: warning: group or other writable: /etc/postfix/./transport
+May 19 06:42:43 email-threat-docker postfix/postfix-script[97]: starting the Postfix mail system
+May 19 06:42:43 email-threat-docker postfix/master[1]: daemon started -- version 3.6.4, configuration /etc/postfix
+May 19 06:43:55 email-threat-docker postfix/smtpd[207]: warning: dict_nis_init: NIS domain name not set - NIS lookups disabled
+May 19 06:43:55 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:43:56 email-threat-docker postfix/smtpd[207]: B16A68C637: client=unknown[172.20.0.1]
+May 19 06:43:56 email-threat-docker postfix/cleanup[211]: B16A68C637: prepend: header Subject: Upcoming Holiday Schedule from unknown[172.20.0.1]; from=<security@bigcorp.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:43:56 email-threat-docker postfix/cleanup[211]: B16A68C637: message-id=<>
+May 19 06:43:56 email-threat-docker postfix/qmgr[99]: B16A68C637: from=<security@bigcorp.com>, size=620, nrcpt=1 (queue active)
+May 19 06:43:56 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:43:56 email-threat-docker postfix/smtpd[213]: warning: dict_nis_init: NIS domain name not set - NIS lookups disabled
+May 19 06:43:56 email-threat-docker postfix/smtpd[213]: connect from scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:43:56 email-threat-docker postfix/smtpd[213]: C89CB8C63F: client=scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:43:56 email-threat-docker postfix/cleanup[211]: C89CB8C63F: message-id=<>
+May 19 06:43:56 email-threat-docker postfix/qmgr[99]: C89CB8C63F: from=<security@bigcorp.com>, size=851, nrcpt=1 (queue active)
+May 19 06:43:56 email-threat-docker postfix/smtpd[213]: disconnect from scanner.yara_final_project_threat-net[172.20.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:43:56 email-threat-docker postfix/smtp[212]: B16A68C637: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.14, delays=0.03/0.01/0.01/0.08, dsn=2.0.0, status=sent (250 Message delivered)
+May 19 06:43:56 email-threat-docker postfix/qmgr[99]: B16A68C637: removed
+May 19 06:43:56 email-threat-docker postfix/local[214]: warning: dict_nis_init: NIS domain name not set - NIS lookups disabled
+May 19 06:43:56 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:43:57 email-threat-docker postfix/local[214]: C89CB8C63F: to=<recipient@email-threat-docker.local>, relay=local, delay=1, delays=0.01/0.02/0/1, dsn=2.0.0, status=sent (delivered to command: /usr/bin/procmail)
+May 19 06:43:57 email-threat-docker postfix/qmgr[99]: C89CB8C63F: removed
+May 19 06:43:57 email-threat-docker postfix/smtpd[207]: D63358C631: client=unknown[172.20.0.1]
+May 19 06:43:57 email-threat-docker postfix/cleanup[211]: D63358C631: prepend: header Subject: Project Kickoff Meeting from unknown[172.20.0.1]; from=<support@onlineservice.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:43:57 email-threat-docker postfix/cleanup[211]: D63358C631: message-id=<>
+May 19 06:43:57 email-threat-docker postfix/qmgr[99]: D63358C631: from=<support@onlineservice.com>, size=639, nrcpt=1 (queue active)
+May 19 06:43:57 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:43:57 email-threat-docker postfix/smtpd[213]: connect from scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:43:57 email-threat-docker postfix/smtpd[213]: DFC9B8C63F: client=scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:43:57 email-threat-docker postfix/cleanup[211]: DFC9B8C63F: message-id=<>
+May 19 06:43:57 email-threat-docker postfix/qmgr[99]: DFC9B8C63F: from=<support@onlineservice.com>, size=870, nrcpt=1 (queue active)
+May 19 06:43:57 email-threat-docker postfix/smtpd[213]: disconnect from scanner.yara_final_project_threat-net[172.20.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:43:57 email-threat-docker postfix/local[214]: DFC9B8C63F: to=<recipient@email-threat-docker.local>, relay=local, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (delivered to command: /usr/bin/procmail)
+May 19 06:43:57 email-threat-docker postfix/smtp[212]: D63358C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.06, delays=0.01/0/0.01/0.04, dsn=2.0.0, status=sent (250 Message delivered)
+May 19 06:43:57 email-threat-docker postfix/qmgr[99]: DFC9B8C63F: removed
+May 19 06:43:57 email-threat-docker postfix/qmgr[99]: D63358C631: removed
+May 19 06:43:58 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:43:59 email-threat-docker postfix/smtpd[207]: 093A88C631: client=unknown[172.20.0.1]
+May 19 06:43:59 email-threat-docker postfix/cleanup[211]: 093A88C631: prepend: header Subject: Scheduled Maintenance Tonight from unknown[172.20.0.1]; from=<devteam@company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:43:59 email-threat-docker postfix/cleanup[211]: 093A88C631: message-id=<>
+May 19 06:43:59 email-threat-docker postfix/qmgr[99]: 093A88C631: from=<devteam@company.com>, size=634, nrcpt=1 (queue active)
+May 19 06:43:59 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:43:59 email-threat-docker postfix/smtpd[213]: connect from scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:43:59 email-threat-docker postfix/smtpd[213]: 138BA8C63F: client=scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:43:59 email-threat-docker postfix/cleanup[211]: 138BA8C63F: message-id=<>
+May 19 06:43:59 email-threat-docker postfix/qmgr[99]: 138BA8C63F: from=<devteam@company.com>, size=865, nrcpt=1 (queue active)
+May 19 06:43:59 email-threat-docker postfix/smtpd[213]: disconnect from scanner.yara_final_project_threat-net[172.20.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:43:59 email-threat-docker postfix/smtp[212]: 093A88C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.07, delays=0.01/0/0.01/0.04, dsn=2.0.0, status=sent (250 Message delivered)
+May 19 06:43:59 email-threat-docker postfix/qmgr[99]: 093A88C631: removed
+May 19 06:43:59 email-threat-docker postfix/local[214]: 138BA8C63F: to=<recipient@email-threat-docker.local>, relay=local, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (delivered to command: /usr/bin/procmail)
+May 19 06:43:59 email-threat-docker postfix/qmgr[99]: 138BA8C63F: removed
+May 19 06:43:59 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:00 email-threat-docker postfix/smtpd[207]: 30BE98C631: client=unknown[172.20.0.1]
+May 19 06:44:00 email-threat-docker postfix/cleanup[211]: 30BE98C631: prepend: header Subject: Your Subscription Renewal Confirmation from unknown[172.20.0.1]; from=<communications@company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:00 email-threat-docker postfix/cleanup[211]: 30BE98C631: message-id=<>
+May 19 06:44:00 email-threat-docker postfix/qmgr[99]: 30BE98C631: from=<communications@company.com>, size=606, nrcpt=1 (queue active)
+May 19 06:44:00 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:00 email-threat-docker postfix/smtpd[213]: connect from scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:00 email-threat-docker postfix/smtpd[213]: 39E528C63F: client=scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:00 email-threat-docker postfix/cleanup[211]: 39E528C63F: message-id=<>
+May 19 06:44:00 email-threat-docker postfix/qmgr[99]: 39E528C63F: from=<communications@company.com>, size=837, nrcpt=1 (queue active)
+May 19 06:44:00 email-threat-docker postfix/smtpd[213]: disconnect from scanner.yara_final_project_threat-net[172.20.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:00 email-threat-docker postfix/smtp[212]: 30BE98C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.06, delays=0.01/0/0.01/0.03, dsn=2.0.0, status=sent (250 Message delivered)
+May 19 06:44:00 email-threat-docker postfix/qmgr[99]: 30BE98C631: removed
+May 19 06:44:00 email-threat-docker postfix/local[214]: 39E528C63F: to=<recipient@email-threat-docker.local>, relay=local, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (delivered to command: /usr/bin/procmail)
+May 19 06:44:00 email-threat-docker postfix/qmgr[99]: 39E528C63F: removed
+May 19 06:44:00 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:01 email-threat-docker postfix/smtpd[207]: 584C58C631: client=unknown[172.20.0.1]
+May 19 06:44:01 email-threat-docker postfix/cleanup[211]: 584C58C631: prepend: header Subject: Join Us for the Charity Run! from unknown[172.20.0.1]; from=<noreply@itdept.company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:01 email-threat-docker postfix/cleanup[211]: 584C58C631: message-id=<>
+May 19 06:44:01 email-threat-docker postfix/qmgr[99]: 584C58C631: from=<noreply@itdept.company.com>, size=649, nrcpt=1 (queue active)
+May 19 06:44:01 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:01 email-threat-docker postfix/smtpd[213]: connect from scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:01 email-threat-docker postfix/smtpd[213]: 624DD8C63F: client=scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:01 email-threat-docker postfix/cleanup[211]: 624DD8C63F: message-id=<>
+May 19 06:44:01 email-threat-docker postfix/qmgr[99]: 624DD8C63F: from=<noreply@itdept.company.com>, size=880, nrcpt=1 (queue active)
+May 19 06:44:01 email-threat-docker postfix/smtpd[213]: disconnect from scanner.yara_final_project_threat-net[172.20.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:01 email-threat-docker postfix/smtp[212]: 584C58C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.06, delays=0.02/0/0.01/0.04, dsn=2.0.0, status=sent (250 Message delivered)
+May 19 06:44:01 email-threat-docker postfix/qmgr[99]: 584C58C631: removed
+May 19 06:44:01 email-threat-docker postfix/local[214]: 624DD8C63F: to=<recipient@email-threat-docker.local>, relay=local, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (delivered to command: /usr/bin/procmail)
+May 19 06:44:01 email-threat-docker postfix/qmgr[99]: 624DD8C63F: removed
+May 19 06:44:01 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:02 email-threat-docker postfix/smtpd[207]: 7E6938C631: client=unknown[172.20.0.1]
+May 19 06:44:02 email-threat-docker postfix/cleanup[211]: 7E6938C631: prepend: header Subject: Password Change Successful from unknown[172.20.0.1]; from=<communications@company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:02 email-threat-docker postfix/cleanup[211]: 7E6938C631: message-id=<>
+May 19 06:44:02 email-threat-docker postfix/qmgr[99]: 7E6938C631: from=<communications@company.com>, size=637, nrcpt=1 (queue active)
+May 19 06:44:02 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:02 email-threat-docker postfix/smtpd[213]: connect from scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:02 email-threat-docker postfix/smtpd[213]: 881A48C63F: client=scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:02 email-threat-docker postfix/cleanup[211]: 881A48C63F: message-id=<>
+May 19 06:44:02 email-threat-docker postfix/qmgr[99]: 881A48C63F: from=<communications@company.com>, size=868, nrcpt=1 (queue active)
+May 19 06:44:02 email-threat-docker postfix/smtpd[213]: disconnect from scanner.yara_final_project_threat-net[172.20.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:02 email-threat-docker postfix/smtp[212]: 7E6938C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.06, delays=0.01/0/0.01/0.03, dsn=2.0.0, status=sent (250 Message delivered)
+May 19 06:44:02 email-threat-docker postfix/qmgr[99]: 7E6938C631: removed
+May 19 06:44:02 email-threat-docker postfix/local[214]: 881A48C63F: to=<recipient@email-threat-docker.local>, relay=local, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (delivered to command: /usr/bin/procmail)
+May 19 06:44:02 email-threat-docker postfix/qmgr[99]: 881A48C63F: removed
+May 19 06:44:02 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:03 email-threat-docker postfix/smtpd[207]: AB8FA8C631: client=unknown[172.20.0.1]
+May 19 06:44:03 email-threat-docker postfix/cleanup[211]: AB8FA8C631: prepend: header Subject: Feature X Deployment from unknown[172.20.0.1]; from=<rewards@shopping.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:03 email-threat-docker postfix/cleanup[211]: AB8FA8C631: message-id=<>
+May 19 06:44:03 email-threat-docker postfix/qmgr[99]: AB8FA8C631: from=<rewards@shopping.com>, size=619, nrcpt=1 (queue active)
+May 19 06:44:03 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:03 email-threat-docker postfix/smtpd[213]: connect from scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:03 email-threat-docker postfix/smtpd[213]: BC1268C63F: client=scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:03 email-threat-docker postfix/cleanup[211]: BC1268C63F: message-id=<>
+May 19 06:44:03 email-threat-docker postfix/qmgr[99]: BC1268C63F: from=<rewards@shopping.com>, size=850, nrcpt=1 (queue active)
+May 19 06:44:03 email-threat-docker postfix/smtpd[213]: disconnect from scanner.yara_final_project_threat-net[172.20.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:03 email-threat-docker postfix/smtp[212]: AB8FA8C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.1, delays=0.03/0/0.02/0.05, dsn=2.0.0, status=sent (250 Message delivered)
+May 19 06:44:03 email-threat-docker postfix/qmgr[99]: AB8FA8C631: removed
+May 19 06:44:03 email-threat-docker postfix/local[214]: BC1268C63F: to=<recipient@email-threat-docker.local>, relay=local, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (delivered to command: /usr/bin/procmail)
+May 19 06:44:03 email-threat-docker postfix/qmgr[99]: BC1268C63F: removed
+May 19 06:44:03 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:04 email-threat-docker postfix/smtpd[207]: D4DBF8C631: client=unknown[172.20.0.1]
+May 19 06:44:04 email-threat-docker postfix/cleanup[211]: D4DBF8C631: prepend: header Subject: Town Hall Meeting Next Week from unknown[172.20.0.1]; from=<rewards@shopping.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:04 email-threat-docker postfix/cleanup[211]: D4DBF8C631: message-id=<>
+May 19 06:44:04 email-threat-docker postfix/qmgr[99]: D4DBF8C631: from=<rewards@shopping.com>, size=640, nrcpt=1 (queue active)
+May 19 06:44:04 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:04 email-threat-docker postfix/smtpd[213]: connect from scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:04 email-threat-docker postfix/smtpd[213]: DEE7B8C63F: client=scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:04 email-threat-docker postfix/cleanup[211]: DEE7B8C63F: message-id=<>
+May 19 06:44:04 email-threat-docker postfix/qmgr[99]: DEE7B8C63F: from=<rewards@shopping.com>, size=871, nrcpt=1 (queue active)
+May 19 06:44:04 email-threat-docker postfix/smtpd[213]: disconnect from scanner.yara_final_project_threat-net[172.20.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:04 email-threat-docker postfix/smtp[212]: D4DBF8C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.06, delays=0.02/0/0.01/0.03, dsn=2.0.0, status=sent (250 Message delivered)
+May 19 06:44:04 email-threat-docker postfix/qmgr[99]: D4DBF8C631: removed
+May 19 06:44:04 email-threat-docker postfix/local[214]: DEE7B8C63F: to=<recipient@email-threat-docker.local>, relay=local, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (delivered to command: /usr/bin/procmail)
+May 19 06:44:04 email-threat-docker postfix/qmgr[99]: DEE7B8C63F: removed
+May 19 06:44:05 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:06 email-threat-docker postfix/smtpd[207]: 0A85A8C631: client=unknown[172.20.0.1]
+May 19 06:44:06 email-threat-docker postfix/cleanup[211]: 0A85A8C631: prepend: header Subject: Team Lunch from unknown[172.20.0.1]; from=<info@company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:06 email-threat-docker postfix/cleanup[211]: 0A85A8C631: message-id=<>
+May 19 06:44:06 email-threat-docker postfix/qmgr[99]: 0A85A8C631: from=<info@company.com>, size=430, nrcpt=1 (queue active)
+May 19 06:44:06 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:06 email-threat-docker postfix/smtpd[213]: connect from scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:06 email-threat-docker postfix/smtpd[213]: 143C18C63F: client=scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:06 email-threat-docker postfix/cleanup[211]: 143C18C63F: message-id=<>
+May 19 06:44:06 email-threat-docker postfix/qmgr[99]: 143C18C63F: from=<info@company.com>, size=661, nrcpt=1 (queue active)
+May 19 06:44:06 email-threat-docker postfix/smtpd[213]: disconnect from scanner.yara_final_project_threat-net[172.20.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:06 email-threat-docker postfix/smtp[212]: 0A85A8C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.06, delays=0.02/0/0.01/0.04, dsn=2.0.0, status=sent (250 Message delivered)
+May 19 06:44:06 email-threat-docker postfix/qmgr[99]: 0A85A8C631: removed
+May 19 06:44:06 email-threat-docker postfix/local[214]: 143C18C63F: to=<recipient@email-threat-docker.local>, relay=local, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (delivered to command: /usr/bin/procmail)
+May 19 06:44:06 email-threat-docker postfix/qmgr[99]: 143C18C63F: removed
+May 19 06:44:06 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:07 email-threat-docker postfix/smtpd[207]: 31BBB8C631: client=unknown[172.20.0.1]
+May 19 06:44:07 email-threat-docker postfix/cleanup[211]: 31BBB8C631: prepend: header Subject: Project Update from unknown[172.20.0.1]; from=<security@service.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:07 email-threat-docker postfix/cleanup[211]: 31BBB8C631: message-id=<>
+May 19 06:44:07 email-threat-docker postfix/qmgr[99]: 31BBB8C631: from=<security@service.com>, size=839, nrcpt=1 (queue active)
+May 19 06:44:07 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:07 email-threat-docker postfix/smtpd[213]: connect from scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:07 email-threat-docker postfix/smtpd[213]: 3D6498C63F: client=scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:07 email-threat-docker postfix/cleanup[211]: 3D6498C63F: message-id=<>
+May 19 06:44:07 email-threat-docker postfix/qmgr[99]: 3D6498C63F: from=<security@service.com>, size=1070, nrcpt=1 (queue active)
+May 19 06:44:07 email-threat-docker postfix/smtpd[213]: disconnect from scanner.yara_final_project_threat-net[172.20.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:07 email-threat-docker postfix/smtp[212]: 31BBB8C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.07, delays=0.02/0/0.01/0.05, dsn=2.0.0, status=sent (250 Message delivered)
+May 19 06:44:07 email-threat-docker postfix/local[214]: 3D6498C63F: to=<recipient@email-threat-docker.local>, relay=local, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (delivered to command: /usr/bin/procmail)
+May 19 06:44:07 email-threat-docker postfix/qmgr[99]: 31BBB8C631: removed
+May 19 06:44:07 email-threat-docker postfix/qmgr[99]: 3D6498C63F: removed
+May 19 06:44:07 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:08 email-threat-docker postfix/smtpd[207]: 599F98C63F: client=unknown[172.20.0.1]
+May 19 06:44:08 email-threat-docker postfix/cleanup[211]: 599F98C63F: prepend: header Subject: Meeting Reminder from unknown[172.20.0.1]; from=<alerts@service.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:08 email-threat-docker postfix/cleanup[211]: 599F98C63F: message-id=<>
+May 19 06:44:08 email-threat-docker postfix/qmgr[99]: 599F98C63F: from=<alerts@service.com>, size=438, nrcpt=1 (queue active)
+May 19 06:44:08 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:08 email-threat-docker postfix/smtpd[213]: connect from scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:08 email-threat-docker postfix/smtpd[213]: 679918C642: client=scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:08 email-threat-docker postfix/cleanup[211]: 679918C642: message-id=<>
+May 19 06:44:08 email-threat-docker postfix/qmgr[99]: 679918C642: from=<alerts@service.com>, size=669, nrcpt=1 (queue active)
+May 19 06:44:08 email-threat-docker postfix/smtpd[213]: disconnect from scanner.yara_final_project_threat-net[172.20.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:08 email-threat-docker postfix/smtp[212]: 599F98C63F: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.08, delays=0.02/0/0.01/0.05, dsn=2.0.0, status=sent (250 Message delivered)
+May 19 06:44:08 email-threat-docker postfix/qmgr[99]: 599F98C63F: removed
+May 19 06:44:08 email-threat-docker postfix/local[214]: 679918C642: to=<recipient@email-threat-docker.local>, relay=local, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (delivered to command: /usr/bin/procmail)
+May 19 06:44:08 email-threat-docker postfix/qmgr[99]: 679918C642: removed
+May 19 06:44:08 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:09 email-threat-docker postfix/smtpd[207]: 8138A8C63F: client=unknown[172.20.0.1]
+May 19 06:44:09 email-threat-docker postfix/cleanup[211]: 8138A8C63F: prepend: header Subject: Network Maintenance from unknown[172.20.0.1]; from=<notifications@company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:09 email-threat-docker postfix/cleanup[211]: 8138A8C63F: message-id=<>
+May 19 06:44:09 email-threat-docker postfix/qmgr[99]: 8138A8C63F: from=<notifications@company.com>, size=454, nrcpt=1 (queue active)
+May 19 06:44:09 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:09 email-threat-docker postfix/smtpd[213]: connect from scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:09 email-threat-docker postfix/smtpd[213]: 8BFC08C642: client=scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:09 email-threat-docker postfix/cleanup[211]: 8BFC08C642: message-id=<>
+May 19 06:44:09 email-threat-docker postfix/qmgr[99]: 8BFC08C642: from=<notifications@company.com>, size=685, nrcpt=1 (queue active)
+May 19 06:44:09 email-threat-docker postfix/smtpd[213]: disconnect from scanner.yara_final_project_threat-net[172.20.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:09 email-threat-docker postfix/smtp[212]: 8138A8C63F: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.07, delays=0.01/0/0.01/0.04, dsn=2.0.0, status=sent (250 Message delivered)
+May 19 06:44:09 email-threat-docker postfix/qmgr[99]: 8138A8C63F: removed
+May 19 06:44:09 email-threat-docker postfix/local[214]: 8BFC08C642: to=<recipient@email-threat-docker.local>, relay=local, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (delivered to command: /usr/bin/procmail)
+May 19 06:44:09 email-threat-docker postfix/qmgr[99]: 8BFC08C642: removed
+May 19 06:44:09 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:10 email-threat-docker postfix/smtpd[207]: B1E198C63F: client=unknown[172.20.0.1]
+May 19 06:44:10 email-threat-docker postfix/cleanup[211]: B1E198C63F: prepend: header Subject: New Policy Document from unknown[172.20.0.1]; from=<notifications@company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:10 email-threat-docker postfix/cleanup[211]: B1E198C63F: message-id=<>
+May 19 06:44:10 email-threat-docker postfix/qmgr[99]: B1E198C63F: from=<notifications@company.com>, size=851, nrcpt=1 (queue active)
+May 19 06:44:10 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:10 email-threat-docker postfix/smtpd[213]: connect from scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:10 email-threat-docker postfix/smtpd[213]: BD80A8C642: client=scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:10 email-threat-docker postfix/cleanup[211]: BD80A8C642: message-id=<>
+May 19 06:44:10 email-threat-docker postfix/qmgr[99]: BD80A8C642: from=<notifications@company.com>, size=1082, nrcpt=1 (queue active)
+May 19 06:44:10 email-threat-docker postfix/smtpd[213]: disconnect from scanner.yara_final_project_threat-net[172.20.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:10 email-threat-docker postfix/smtp[212]: B1E198C63F: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.07, delays=0.02/0/0.01/0.04, dsn=2.0.0, status=sent (250 Message delivered)
+May 19 06:44:10 email-threat-docker postfix/qmgr[99]: B1E198C63F: removed
+May 19 06:44:10 email-threat-docker postfix/local[214]: BD80A8C642: to=<recipient@email-threat-docker.local>, relay=local, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (delivered to command: /usr/bin/procmail)
+May 19 06:44:10 email-threat-docker postfix/qmgr[99]: BD80A8C642: removed
+May 19 06:44:10 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:11 email-threat-docker postfix/smtpd[207]: D97628C63F: client=unknown[172.20.0.1]
+May 19 06:44:11 email-threat-docker postfix/cleanup[211]: D97628C63F: prepend: header Subject: Welcome New Hire from unknown[172.20.0.1]; from=<admin@company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:11 email-threat-docker postfix/cleanup[211]: D97628C63F: message-id=<>
+May 19 06:44:11 email-threat-docker postfix/qmgr[99]: D97628C63F: from=<admin@company.com>, size=441, nrcpt=1 (queue active)
+May 19 06:44:11 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:11 email-threat-docker postfix/smtpd[213]: connect from scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:11 email-threat-docker postfix/smtpd[213]: E3EEB8C642: client=scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:11 email-threat-docker postfix/cleanup[211]: E3EEB8C642: message-id=<>
+May 19 06:44:11 email-threat-docker postfix/qmgr[99]: E3EEB8C642: from=<admin@company.com>, size=672, nrcpt=1 (queue active)
+May 19 06:44:11 email-threat-docker postfix/smtpd[213]: disconnect from scanner.yara_final_project_threat-net[172.20.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:11 email-threat-docker postfix/smtp[212]: D97628C63F: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.06, delays=0.01/0/0.01/0.04, dsn=2.0.0, status=sent (250 Message delivered)
+May 19 06:44:11 email-threat-docker postfix/qmgr[99]: D97628C63F: removed
+May 19 06:44:11 email-threat-docker postfix/local[214]: E3EEB8C642: to=<recipient@email-threat-docker.local>, relay=local, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (delivered to command: /usr/bin/procmail)
+May 19 06:44:11 email-threat-docker postfix/qmgr[99]: E3EEB8C642: removed
+May 19 06:44:12 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:13 email-threat-docker postfix/smtpd[207]: 0E94B8C63F: client=unknown[172.20.0.1]
+May 19 06:44:13 email-threat-docker postfix/cleanup[211]: 0E94B8C63F: prepend: header Subject: Office Closure from unknown[172.20.0.1]; from=<security@bigcorp.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:13 email-threat-docker postfix/cleanup[211]: 0E94B8C63F: message-id=<>
+May 19 06:44:13 email-threat-docker postfix/qmgr[99]: 0E94B8C63F: from=<security@bigcorp.com>, size=443, nrcpt=1 (queue active)
+May 19 06:44:13 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:13 email-threat-docker postfix/smtpd[213]: connect from scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:13 email-threat-docker postfix/smtpd[213]: 223EA8C642: client=scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:13 email-threat-docker postfix/cleanup[211]: 223EA8C642: message-id=<>
+May 19 06:44:13 email-threat-docker postfix/qmgr[99]: 223EA8C642: from=<security@bigcorp.com>, size=674, nrcpt=1 (queue active)
+May 19 06:44:13 email-threat-docker postfix/smtpd[213]: disconnect from scanner.yara_final_project_threat-net[172.20.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:13 email-threat-docker postfix/local[214]: 223EA8C642: to=<recipient@email-threat-docker.local>, relay=local, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (delivered to command: /usr/bin/procmail)
+May 19 06:44:13 email-threat-docker postfix/qmgr[99]: 223EA8C642: removed
+May 19 06:44:13 email-threat-docker postfix/smtp[212]: 0E94B8C63F: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.12, delays=0.03/0/0.01/0.07, dsn=2.0.0, status=sent (250 Message delivered)
+May 19 06:44:13 email-threat-docker postfix/qmgr[99]: 0E94B8C63F: removed
+May 19 06:44:13 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:14 email-threat-docker postfix/smtpd[207]: 393A58C63F: client=unknown[172.20.0.1]
+May 19 06:44:14 email-threat-docker postfix/cleanup[211]: 393A58C63F: prepend: header Subject: Benefits Update from unknown[172.20.0.1]; from=<security@service.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:14 email-threat-docker postfix/cleanup[211]: 393A58C63F: message-id=<>
+May 19 06:44:14 email-threat-docker postfix/qmgr[99]: 393A58C63F: from=<security@service.com>, size=442, nrcpt=1 (queue active)
+May 19 06:44:14 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:14 email-threat-docker postfix/smtpd[213]: connect from scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:14 email-threat-docker postfix/smtpd[213]: 438E68C642: client=scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:14 email-threat-docker postfix/cleanup[211]: 438E68C642: message-id=<>
+May 19 06:44:14 email-threat-docker postfix/qmgr[99]: 438E68C642: from=<security@service.com>, size=673, nrcpt=1 (queue active)
+May 19 06:44:14 email-threat-docker postfix/smtpd[213]: disconnect from scanner.yara_final_project_threat-net[172.20.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:14 email-threat-docker postfix/smtp[212]: 393A58C63F: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.06, delays=0.02/0/0.01/0.04, dsn=2.0.0, status=sent (250 Message delivered)
+May 19 06:44:14 email-threat-docker postfix/qmgr[99]: 393A58C63F: removed
+May 19 06:44:14 email-threat-docker postfix/local[214]: 438E68C642: to=<recipient@email-threat-docker.local>, relay=local, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (delivered to command: /usr/bin/procmail)
+May 19 06:44:14 email-threat-docker postfix/qmgr[99]: 438E68C642: removed
+May 19 06:44:14 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:15 email-threat-docker postfix/smtpd[207]: 648278C63F: client=unknown[172.20.0.1]
+May 19 06:44:15 email-threat-docker postfix/cleanup[211]: 648278C63F: prepend: header Subject: Password Policy Reminder from unknown[172.20.0.1]; from=<devteam@company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:15 email-threat-docker postfix/cleanup[211]: 648278C63F: message-id=<>
+May 19 06:44:15 email-threat-docker postfix/qmgr[99]: 648278C63F: from=<devteam@company.com>, size=456, nrcpt=1 (queue active)
+May 19 06:44:15 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:15 email-threat-docker postfix/smtpd[213]: connect from scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:15 email-threat-docker postfix/smtpd[213]: 711E98C642: client=scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:15 email-threat-docker postfix/cleanup[211]: 711E98C642: message-id=<>
+May 19 06:44:15 email-threat-docker postfix/qmgr[99]: 711E98C642: from=<devteam@company.com>, size=687, nrcpt=1 (queue active)
+May 19 06:44:15 email-threat-docker postfix/smtpd[213]: disconnect from scanner.yara_final_project_threat-net[172.20.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:15 email-threat-docker postfix/smtp[212]: 648278C63F: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.08, delays=0.02/0/0.01/0.05, dsn=2.0.0, status=sent (250 Message delivered)
+May 19 06:44:15 email-threat-docker postfix/qmgr[99]: 648278C63F: removed
+May 19 06:44:15 email-threat-docker postfix/local[214]: 711E98C642: to=<recipient@email-threat-docker.local>, relay=local, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (delivered to command: /usr/bin/procmail)
+May 19 06:44:15 email-threat-docker postfix/qmgr[99]: 711E98C642: removed
+May 19 06:44:15 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:15 email-threat-docker postfix/smtpd[207]: D225C8C63F: client=unknown[172.20.0.1]
+May 19 06:44:15 email-threat-docker postfix/cleanup[211]: D225C8C63F: prepend: header Subject: Conference Registration from unknown[172.20.0.1]; from=<rewards@shopping.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:15 email-threat-docker postfix/cleanup[211]: D225C8C63F: message-id=<>
+May 19 06:44:15 email-threat-docker postfix/qmgr[99]: D225C8C63F: from=<rewards@shopping.com>, size=451, nrcpt=1 (queue active)
+May 19 06:44:15 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:15 email-threat-docker postfix/smtpd[213]: connect from scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:15 email-threat-docker postfix/smtpd[213]: DC5048C642: client=scanner.yara_final_project_threat-net[172.20.0.3]
+May 19 06:44:15 email-threat-docker postfix/cleanup[211]: DC5048C642: message-id=<>
+May 19 06:44:15 email-threat-docker postfix/qmgr[99]: DC5048C642: from=<rewards@shopping.com>, size=682, nrcpt=1 (queue active)
+May 19 06:44:15 email-threat-docker postfix/smtpd[213]: disconnect from scanner.yara_final_project_threat-net[172.20.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:15 email-threat-docker postfix/smtp[212]: D225C8C63F: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.06, delays=0.02/0/0.01/0.04, dsn=2.0.0, status=sent (250 Message delivered)
+May 19 06:44:15 email-threat-docker postfix/qmgr[99]: D225C8C63F: removed
+May 19 06:44:15 email-threat-docker postfix/local[214]: DC5048C642: to=<recipient@email-threat-docker.local>, relay=local, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (delivered to command: /usr/bin/procmail)
+May 19 06:44:15 email-threat-docker postfix/qmgr[99]: DC5048C642: removed
+May 19 06:44:14 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:15 email-threat-docker postfix/smtpd[207]: E11848C631: client=unknown[172.20.0.1]
+May 19 06:44:15 email-threat-docker postfix/cleanup[211]: E11848C631: prepend: header Subject: Urgent: Invoice Payment Required from unknown[172.20.0.1]; from=<deals@newsletter.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:15 email-threat-docker postfix/cleanup[211]: E11848C631: message-id=<>
+May 19 06:44:15 email-threat-docker postfix/qmgr[99]: E11848C631: from=<deals@newsletter.com>, size=568, nrcpt=1 (queue active)
+May 19 06:44:15 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:15 email-threat-docker postfix/smtp[212]: E11848C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.05, delays=0.02/0/0.01/0.02, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:15 email-threat-docker postfix/qmgr[99]: E11848C631: removed
+May 19 06:44:16 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:17 email-threat-docker postfix/smtpd[207]: 1441E8C631: client=unknown[172.20.0.1]
+May 19 06:44:17 email-threat-docker postfix/cleanup[211]: 1441E8C631: prepend: header Subject: Hot Deals This Weekend! from unknown[172.20.0.1]; from=<info@company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:17 email-threat-docker postfix/cleanup[211]: 1441E8C631: message-id=<>
+May 19 06:44:17 email-threat-docker postfix/qmgr[99]: 1441E8C631: from=<info@company.com>, size=537, nrcpt=1 (queue active)
+May 19 06:44:17 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:17 email-threat-docker postfix/smtp[212]: 1441E8C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.07, delays=0.02/0/0.01/0.04, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:17 email-threat-docker postfix/qmgr[99]: 1441E8C631: removed
+May 19 06:44:17 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:18 email-threat-docker postfix/smtpd[207]: 4D6B68C631: client=unknown[172.20.0.1]
+May 19 06:44:18 email-threat-docker postfix/cleanup[211]: 4D6B68C631: prepend: header Subject: Account Locked from unknown[172.20.0.1]; from=<devteam@company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:18 email-threat-docker postfix/cleanup[211]: 4D6B68C631: message-id=<>
+May 19 06:44:18 email-threat-docker postfix/qmgr[99]: 4D6B68C631: from=<devteam@company.com>, size=552, nrcpt=1 (queue active)
+May 19 06:44:18 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:18 email-threat-docker postfix/smtp[212]: 4D6B68C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.05, delays=0.01/0/0.01/0.02, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:18 email-threat-docker postfix/qmgr[99]: 4D6B68C631: removed
+May 19 06:44:18 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:19 email-threat-docker postfix/smtpd[207]: 719A78C631: client=unknown[172.20.0.1]
+May 19 06:44:19 email-threat-docker postfix/cleanup[211]: 719A78C631: prepend: header Subject: Password Reset Required from unknown[172.20.0.1]; from=<notifications@company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:19 email-threat-docker postfix/cleanup[211]: 719A78C631: message-id=<>
+May 19 06:44:19 email-threat-docker postfix/qmgr[99]: 719A78C631: from=<notifications@company.com>, size=597, nrcpt=1 (queue active)
+May 19 06:44:19 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:19 email-threat-docker postfix/smtp[212]: 719A78C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.06, delays=0.02/0/0.02/0.02, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:19 email-threat-docker postfix/qmgr[99]: 719A78C631: removed
+May 19 06:44:19 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:20 email-threat-docker postfix/smtpd[207]: 9BF078C631: client=unknown[172.20.0.1]
+May 19 06:44:20 email-threat-docker postfix/cleanup[211]: 9BF078C631: prepend: header Subject: Important Document from unknown[172.20.0.1]; from=<teamlead@company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:20 email-threat-docker postfix/cleanup[211]: 9BF078C631: message-id=<>
+May 19 06:44:20 email-threat-docker postfix/qmgr[99]: 9BF078C631: from=<teamlead@company.com>, size=523, nrcpt=1 (queue active)
+May 19 06:44:20 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:20 email-threat-docker postfix/smtp[212]: 9BF078C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.07, delays=0.03/0/0.01/0.02, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:20 email-threat-docker postfix/qmgr[99]: 9BF078C631: removed
+May 19 06:44:20 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:21 email-threat-docker postfix/smtpd[207]: C7F848C631: client=unknown[172.20.0.1]
+May 19 06:44:21 email-threat-docker postfix/cleanup[211]: C7F848C631: prepend: header Subject: Monthly Report from unknown[172.20.0.1]; from=<teamlead@company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:21 email-threat-docker postfix/cleanup[211]: C7F848C631: message-id=<>
+May 19 06:44:21 email-threat-docker postfix/qmgr[99]: C7F848C631: from=<teamlead@company.com>, size=586, nrcpt=1 (queue active)
+May 19 06:44:21 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:21 email-threat-docker postfix/smtp[212]: C7F848C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.05, delays=0.02/0/0.01/0.03, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:21 email-threat-docker postfix/qmgr[99]: C7F848C631: removed
+May 19 06:44:22 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:22 email-threat-docker postfix/smtpd[207]: F266B8C631: client=unknown[172.20.0.1]
+May 19 06:44:22 email-threat-docker postfix/cleanup[211]: F266B8C631: prepend: header Subject: System Notification from unknown[172.20.0.1]; from=<events@company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:22 email-threat-docker postfix/cleanup[211]: F266B8C631: message-id=<>
+May 19 06:44:23 email-threat-docker postfix/qmgr[99]: F266B8C631: from=<events@company.com>, size=525, nrcpt=1 (queue active)
+May 19 06:44:23 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:23 email-threat-docker postfix/smtp[212]: F266B8C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.05, delays=0.02/0/0.01/0.02, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:23 email-threat-docker postfix/qmgr[99]: F266B8C631: removed
+May 19 06:44:23 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:24 email-threat-docker postfix/smtpd[207]: 33E808C631: client=unknown[172.20.0.1]
+May 19 06:44:24 email-threat-docker postfix/cleanup[211]: 33E808C631: prepend: header Subject: Final Warning from unknown[172.20.0.1]; from=<security@onlinebank.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:24 email-threat-docker postfix/cleanup[211]: 33E808C631: message-id=<>
+May 19 06:44:24 email-threat-docker postfix/qmgr[99]: 33E808C631: from=<security@onlinebank.com>, size=574, nrcpt=1 (queue active)
+May 19 06:44:24 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:24 email-threat-docker postfix/smtp[212]: 33E808C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.13, delays=0.05/0/0.04/0.04, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:24 email-threat-docker postfix/qmgr[99]: 33E808C631: removed
+May 19 06:44:24 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:25 email-threat-docker postfix/smtpd[207]: 68ED08C631: client=unknown[172.20.0.1]
+May 19 06:44:25 email-threat-docker postfix/cleanup[211]: 68ED08C631: prepend: header Subject: Mandatory W-2 Form from unknown[172.20.0.1]; from=<support@bank.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:25 email-threat-docker postfix/cleanup[211]: 68ED08C631: message-id=<>
+May 19 06:44:25 email-threat-docker postfix/qmgr[99]: 68ED08C631: from=<support@bank.com>, size=512, nrcpt=1 (queue active)
+May 19 06:44:25 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:25 email-threat-docker postfix/smtp[212]: 68ED08C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.06, delays=0.02/0/0.01/0.02, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:25 email-threat-docker postfix/qmgr[99]: 68ED08C631: removed
+May 19 06:44:25 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:26 email-threat-docker postfix/smtpd[207]: 8F4C88C63F: client=unknown[172.20.0.1]
+May 19 06:44:26 email-threat-docker postfix/cleanup[211]: 8F4C88C63F: prepend: header Subject: Account Verification Needed from unknown[172.20.0.1]; from=<rewards@shopping.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:26 email-threat-docker postfix/cleanup[211]: 8F4C88C63F: message-id=<>
+May 19 06:44:26 email-threat-docker postfix/qmgr[99]: 8F4C88C63F: from=<rewards@shopping.com>, size=572, nrcpt=1 (queue active)
+May 19 06:44:26 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:26 email-threat-docker postfix/smtp[212]: 8F4C88C63F: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.04, delays=0.01/0/0.01/0.02, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:26 email-threat-docker postfix/qmgr[99]: 8F4C88C63F: removed
+May 19 06:44:26 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:27 email-threat-docker postfix/smtpd[207]: B41D88C63F: client=unknown[172.20.0.1]
+May 19 06:44:27 email-threat-docker postfix/cleanup[211]: B41D88C63F: prepend: header Subject: Password Reset Request from unknown[172.20.0.1]; from=<noreply@itdept.company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:27 email-threat-docker postfix/cleanup[211]: B41D88C63F: message-id=<>
+May 19 06:44:27 email-threat-docker postfix/qmgr[99]: B41D88C63F: from=<noreply@itdept.company.com>, size=544, nrcpt=1 (queue active)
+May 19 06:44:27 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:27 email-threat-docker postfix/smtp[212]: B41D88C63F: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.04, delays=0.02/0/0.01/0.01, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:27 email-threat-docker postfix/qmgr[99]: B41D88C63F: removed
+May 19 06:44:27 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:28 email-threat-docker postfix/smtpd[207]: DF6F68C63F: client=unknown[172.20.0.1]
+May 19 06:44:28 email-threat-docker postfix/cleanup[211]: DF6F68C63F: prepend: header Subject: Mandatory Company Survey from unknown[172.20.0.1]; from=<support@onlineservice.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:28 email-threat-docker postfix/cleanup[211]: DF6F68C63F: message-id=<>
+May 19 06:44:28 email-threat-docker postfix/qmgr[99]: DF6F68C63F: from=<support@onlineservice.com>, size=536, nrcpt=1 (queue active)
+May 19 06:44:28 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:29 email-threat-docker postfix/smtp[212]: DF6F68C63F: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.13, delays=0.02/0/0.05/0.06, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:29 email-threat-docker postfix/qmgr[99]: DF6F68C63F: removed
+May 19 06:44:29 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:30 email-threat-docker postfix/smtpd[207]: 141818C63F: client=unknown[172.20.0.1]
+May 19 06:44:30 email-threat-docker postfix/cleanup[211]: 141818C63F: prepend: header Subject: Suspicious Login Attempt from unknown[172.20.0.1]; from=<admin@company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:30 email-threat-docker postfix/cleanup[211]: 141818C63F: message-id=<>
+May 19 06:44:30 email-threat-docker postfix/qmgr[99]: 141818C63F: from=<admin@company.com>, size=549, nrcpt=1 (queue active)
+May 19 06:44:30 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:30 email-threat-docker postfix/smtp[212]: 141818C63F: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.04, delays=0.01/0/0.01/0.02, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:30 email-threat-docker postfix/qmgr[99]: 141818C63F: removed
+May 19 06:44:30 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:31 email-threat-docker postfix/smtpd[207]: 3AD868C63F: client=unknown[172.20.0.1]
+May 19 06:44:31 email-threat-docker postfix/cleanup[211]: 3AD868C63F: prepend: header Subject: Account Compromised from unknown[172.20.0.1]; from=<support@bank.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:31 email-threat-docker postfix/cleanup[211]: 3AD868C63F: message-id=<>
+May 19 06:44:31 email-threat-docker postfix/qmgr[99]: 3AD868C63F: from=<support@bank.com>, size=523, nrcpt=1 (queue active)
+May 19 06:44:31 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:31 email-threat-docker postfix/smtp[212]: 3AD868C63F: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.11, delays=0.04/0/0.02/0.05, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:31 email-threat-docker postfix/qmgr[99]: 3AD868C63F: removed
+May 19 06:44:31 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:32 email-threat-docker postfix/smtpd[207]: 6B2758C63F: client=unknown[172.20.0.1]
+May 19 06:44:32 email-threat-docker postfix/cleanup[211]: 6B2758C63F: prepend: header Subject: You've Won a $100 Gift Card! from unknown[172.20.0.1]; from=<teamlead@company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:32 email-threat-docker postfix/cleanup[211]: 6B2758C63F: message-id=<>
+May 19 06:44:32 email-threat-docker postfix/qmgr[99]: 6B2758C63F: from=<teamlead@company.com>, size=532, nrcpt=1 (queue active)
+May 19 06:44:32 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:32 email-threat-docker postfix/smtp[212]: 6B2758C63F: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.06, delays=0.02/0/0.02/0.03, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:32 email-threat-docker postfix/qmgr[99]: 6B2758C63F: removed
+May 19 06:44:32 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:33 email-threat-docker postfix/smtpd[207]: A7DB58C63F: client=unknown[172.20.0.1]
+May 19 06:44:33 email-threat-docker postfix/cleanup[211]: A7DB58C63F: prepend: header Subject: Quick Employee Survey from unknown[172.20.0.1]; from=<events@company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:33 email-threat-docker postfix/cleanup[211]: A7DB58C63F: message-id=<>
+May 19 06:44:33 email-threat-docker postfix/qmgr[99]: A7DB58C63F: from=<events@company.com>, size=510, nrcpt=1 (queue active)
+May 19 06:44:33 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:33 email-threat-docker postfix/smtp[212]: A7DB58C63F: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.05, delays=0.02/0/0.01/0.02, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:33 email-threat-docker postfix/qmgr[99]: A7DB58C63F: removed
+May 19 06:44:33 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:34 email-threat-docker postfix/smtpd[207]: D78F28C63F: client=unknown[172.20.0.1]
+May 19 06:44:34 email-threat-docker postfix/cleanup[211]: D78F28C63F: prepend: header Subject: URGENT: Security Alert from unknown[172.20.0.1]; from=<teamlead@company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:34 email-threat-docker postfix/cleanup[211]: D78F28C63F: message-id=<>
+May 19 06:44:34 email-threat-docker postfix/qmgr[99]: D78F28C63F: from=<teamlead@company.com>, size=903, nrcpt=1 (queue active)
+May 19 06:44:34 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:34 email-threat-docker postfix/smtp[212]: D78F28C63F: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.04, delays=0.01/0/0.01/0.02, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:34 email-threat-docker postfix/qmgr[99]: D78F28C63F: removed
+May 19 06:44:35 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:36 email-threat-docker postfix/smtpd[207]: 088348C631: client=unknown[172.20.0.1]
+May 19 06:44:36 email-threat-docker postfix/cleanup[211]: 088348C631: prepend: header Subject: Invoice #INV-9876 from unknown[172.20.0.1]; from=<noreply@itdept.company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:36 email-threat-docker postfix/cleanup[211]: 088348C631: message-id=<>
+May 19 06:44:36 email-threat-docker postfix/qmgr[99]: 088348C631: from=<noreply@itdept.company.com>, size=2204, nrcpt=1 (queue active)
+May 19 06:44:36 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:36 email-threat-docker postfix/smtp[212]: 088348C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.1, delays=0.07/0/0.01/0.02, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:36 email-threat-docker postfix/qmgr[99]: 088348C631: removed
+May 19 06:44:36 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:37 email-threat-docker postfix/smtpd[207]: 3F8518C631: client=unknown[172.20.0.1]
+May 19 06:44:37 email-threat-docker postfix/cleanup[211]: 3F8518C631: prepend: header Subject: Account Verification Needed from unknown[172.20.0.1]; from=<alerts@service.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:37 email-threat-docker postfix/cleanup[211]: 3F8518C631: message-id=<>
+May 19 06:44:37 email-threat-docker postfix/qmgr[99]: 3F8518C631: from=<alerts@service.com>, size=495, nrcpt=1 (queue active)
+May 19 06:44:37 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:37 email-threat-docker postfix/smtp[212]: 3F8518C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.04, delays=0.02/0/0.01/0.02, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:37 email-threat-docker postfix/qmgr[99]: 3F8518C631: removed
+May 19 06:44:37 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:38 email-threat-docker postfix/smtpd[207]: 651408C631: client=unknown[172.20.0.1]
+May 19 06:44:38 email-threat-docker postfix/cleanup[211]: 651408C631: prepend: header Subject: Document Shared from unknown[172.20.0.1]; from=<events@company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:38 email-threat-docker postfix/cleanup[211]: 651408C631: message-id=<>
+May 19 06:44:38 email-threat-docker postfix/qmgr[99]: 651408C631: from=<events@company.com>, size=655, nrcpt=1 (queue active)
+May 19 06:44:38 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:38 email-threat-docker postfix/smtp[212]: 651408C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.05, delays=0.01/0/0.01/0.02, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:38 email-threat-docker postfix/qmgr[99]: 651408C631: removed
+May 19 06:44:38 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:39 email-threat-docker postfix/smtpd[207]: 8EB468C631: client=unknown[172.20.0.1]
+May 19 06:44:39 email-threat-docker postfix/cleanup[211]: 8EB468C631: prepend: header Subject: Encrypted Report from unknown[172.20.0.1]; from=<hr@company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:39 email-threat-docker postfix/cleanup[211]: 8EB468C631: message-id=<>
+May 19 06:44:39 email-threat-docker postfix/qmgr[99]: 8EB468C631: from=<hr@company.com>, size=2185, nrcpt=1 (queue active)
+May 19 06:44:39 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:39 email-threat-docker postfix/smtp[212]: 8EB468C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.05, delays=0.02/0/0.01/0.02, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:39 email-threat-docker postfix/qmgr[99]: 8EB468C631: removed
+May 19 06:44:39 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:40 email-threat-docker postfix/smtpd[207]: BBFC18C631: client=unknown[172.20.0.1]
+May 19 06:44:40 email-threat-docker postfix/cleanup[211]: BBFC18C631: prepend: header Subject: Password Reset Required from unknown[172.20.0.1]; from=<events@company.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:40 email-threat-docker postfix/cleanup[211]: BBFC18C631: message-id=<>
+May 19 06:44:40 email-threat-docker postfix/qmgr[99]: BBFC18C631: from=<events@company.com>, size=473, nrcpt=1 (queue active)
+May 19 06:44:40 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:40 email-threat-docker postfix/smtp[212]: BBFC18C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.04, delays=0.01/0/0.01/0.02, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:40 email-threat-docker postfix/qmgr[99]: BBFC18C631: removed
+May 19 06:44:41 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:41 email-threat-docker postfix/smtpd[207]: E19E08C631: client=unknown[172.20.0.1]
+May 19 06:44:41 email-threat-docker postfix/cleanup[211]: E19E08C631: prepend: header Subject: Your Package Tracking from unknown[172.20.0.1]; from=<security@onlinebank.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:41 email-threat-docker postfix/cleanup[211]: E19E08C631: message-id=<>
+May 19 06:44:41 email-threat-docker postfix/qmgr[99]: E19E08C631: from=<security@onlinebank.com>, size=474, nrcpt=1 (queue active)
+May 19 06:44:41 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:41 email-threat-docker postfix/smtp[212]: E19E08C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.04, delays=0.01/0/0.01/0.02, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:41 email-threat-docker postfix/qmgr[99]: E19E08C631: removed
+May 19 06:44:42 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:43 email-threat-docker postfix/smtpd[207]: 12AB68C631: client=unknown[172.20.0.1]
+May 19 06:44:43 email-threat-docker postfix/cleanup[211]: 12AB68C631: prepend: header Subject: Financial Report from unknown[172.20.0.1]; from=<support@apple.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:43 email-threat-docker postfix/cleanup[211]: 12AB68C631: message-id=<>
+May 19 06:44:43 email-threat-docker postfix/qmgr[99]: 12AB68C631: from=<support@apple.com>, size=807, nrcpt=1 (queue active)
+May 19 06:44:43 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:43 email-threat-docker postfix/smtp[212]: 12AB68C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.08, delays=0.02/0/0.02/0.04, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:43 email-threat-docker postfix/qmgr[99]: 12AB68C631: removed
+May 19 06:44:43 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:44 email-threat-docker postfix/smtpd[207]: 3BB528C631: client=unknown[172.20.0.1]
+May 19 06:44:44 email-threat-docker postfix/cleanup[211]: 3BB528C631: prepend: header Subject: Microsoft Security Update from unknown[172.20.0.1]; from=<rewards@shopping.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:44 email-threat-docker postfix/cleanup[211]: 3BB528C631: message-id=<>
+May 19 06:44:44 email-threat-docker postfix/qmgr[99]: 3BB528C631: from=<rewards@shopping.com>, size=2272, nrcpt=1 (queue active)
+May 19 06:44:44 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:44 email-threat-docker postfix/smtp[212]: 3BB528C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.05, delays=0.02/0/0.01/0.02, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:44 email-threat-docker postfix/qmgr[99]: 3BB528C631: removed
+May 19 06:44:44 email-threat-docker postfix/smtpd[207]: connect from unknown[172.20.0.1]
+May 19 06:44:43 email-threat-docker postfix/smtpd[207]: 9AC038C631: client=unknown[172.20.0.1]
+May 19 06:44:43 email-threat-docker postfix/cleanup[211]: 9AC038C631: prepend: header Subject: Undelivered Mail Notification from unknown[172.20.0.1]; from=<support@bank.com> to=<recipient@email-threat-docker.local> proto=ESMTP helo=<[192.168.48.1]>: [Subject: ]
+May 19 06:44:43 email-threat-docker postfix/cleanup[211]: 9AC038C631: message-id=<>
+May 19 06:44:43 email-threat-docker postfix/qmgr[99]: warning: backward time jump detected -- slewing clock
+May 19 06:44:43 email-threat-docker postfix/qmgr[99]: 9AC038C631: from=<support@bank.com>, size=887, nrcpt=1 (queue active)
+May 19 06:44:43 email-threat-docker postfix/smtpd[207]: disconnect from unknown[172.20.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+May 19 06:44:43 email-threat-docker postfix/smtp[212]: 9AC038C631: to=<recipient@email-threat-docker.local>, relay=scanner[172.20.0.3]:10025, delay=0.04, delays=0.01/0/0.01/0.02, dsn=2.0.0, status=sent (250 Message quarantined)
+May 19 06:44:43 email-threat-docker postfix/qmgr[99]: 9AC038C631: removed
+May 19 08:20:46 email-threat-docker postfix/smtpd[8893]: warning: dict_nis_init: NIS domain name not set - NIS lookups disabled
+May 19 08:20:46 email-threat-docker postfix/smtpd[8893]: connect from unknown[172.20.0.1]
+May 19 08:20:46 email-threat-docker postfix/smtpd[8893]: disconnect from unknown[172.20.0.1] ehlo=1 quit=1 commands=2

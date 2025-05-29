@@ -1,0 +1,17 @@
+title: Phishing URL with Encoding Evasion
+id: a25dd435-3abc-4db9-880c-acf570b0bfef
+status: experimental
+description: Detects phishing attempts with URL encoding evasion
+logsource:
+  product: email_security
+  service: scanner
+detection:
+  selection:
+    - '*Threats: *URL_Encoding_Evasion*'
+  condition: selection
+fields:
+  - quarantined_file
+  - detected_threats
+falsepositives:
+  - Legitimate encoded URLs in marketing emails
+level: high

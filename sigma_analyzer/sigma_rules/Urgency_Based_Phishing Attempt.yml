@@ -1,0 +1,16 @@
+title: Urgency-Based Phishing Attempt
+id: a819192d-338e-4e16-bdb4-68fed675b322
+description: Detects emails using urgent language
+logsource:
+  product: email_security
+  service: scanner
+detection:
+  selection:
+    - '*Threats: Suspicious_Urgency_Language*'
+  condition: selection
+fields:
+  - quarantined_file
+  - detected_threats
+falsepositives:
+  - Legitimate time-sensitive communications
+level: medium
