@@ -58,9 +58,7 @@ services:
       dockerfile: Dockerfile
     container_name: sigma_analyzer
     volumes:
-      - ./logs:/app/logs  # Mount local "logs" dir to "/app/logs" in the container
-      - ./sigma_rules:/app/compiled  # Rules directory
-      - ./sigma_logs:/var/log/sigma
+      - ./logs/sigma:/var/log/sigma
       - /etc/localtime:/etc/localtime:ro
     environment:
       - LOKI_URL=http://loki:3100

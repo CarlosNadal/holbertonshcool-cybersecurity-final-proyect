@@ -217,3 +217,55 @@
 2025-05-19 06:43:11,310 [INFO] Sleeping for 3600 seconds
 2025-05-19 07:39:21,063 [INFO] Analyzing logs from 2025-05-19 09:43:11.307866+00:00 to 2025-05-19 10:39:21.056004+00:00
 2025-05-19 07:39:21,082 [INFO] Sleeping for 3600 seconds
+2025-05-29 10:17:13,496 [INFO] 🚀 Starting Sigma Analyzer (File Mode)
+2025-05-29 10:17:13,498 [INFO] Configuration: {
+  "LOG_DIR": "/var/log/sigma",
+  "COMPILED_RULES_DIR": "./compiled",
+  "INPUT_FILE": "/app/logs/scanner/mail_scanner.json",
+  "USE_FILE_INPUT": true,
+  "QUERY_WINDOW": 60,
+  "SLEEP_INTERVAL": 3600,
+  "ALERT_WEBHOOK": "",
+  "LOG_LEVEL": "INFO"
+}
+2025-05-29 10:17:13,503 [INFO] Analyzing logs from 2025-05-29 12:17:13.500196+00:00 to 2025-05-29 13:17:13.503106+00:00
+2025-05-29 10:17:13,504 [INFO] Sleeping for 3600 seconds
+2025-05-29 15:19:07,287 [INFO] 🚀 Starting Sigma Analyzer (File Mode)
+2025-05-29 15:19:07,290 [INFO] Configuration: {
+  "LOG_DIR": "/var/log/sigma",
+  "COMPILED_RULES_DIR": "./compiled",
+  "INPUT_FILE": "/app/logs/scanner/mail_scanner.json",
+  "USE_FILE_INPUT": true,
+  "QUERY_WINDOW": 60,
+  "SLEEP_INTERVAL": 3600,
+  "ALERT_WEBHOOK": "",
+  "LOG_LEVEL": "INFO"
+}
+2025-05-29 15:19:07,295 [INFO] Analyzing logs from 2025-05-29 17:19:07.292002+00:00 to 2025-05-29 18:19:07.295507+00:00
+2025-05-29 15:19:07,297 [INFO] Sleeping for 3600 seconds
+2025-05-29 15:41:48,873 [INFO] 🚀 Starting Sigma Analyzer (File Mode)
+2025-05-29 15:41:48,875 [INFO] Configuration: {
+  "LOG_DIR": "/var/log/sigma",
+  "COMPILED_RULES_DIR": "./compiled",
+  "INPUT_FILE": "/app/logs/scanner/mail_scanner.json",
+  "USE_FILE_INPUT": true,
+  "QUERY_WINDOW": 60,
+  "SLEEP_INTERVAL": 3600,
+  "ALERT_WEBHOOK": "",
+  "LOG_LEVEL": "INFO"
+}
+2025-05-29 15:41:48,880 [INFO] Analyzing logs from 2025-05-29 17:41:48.877301+00:00 to 2025-05-29 18:41:48.879892+00:00
+2025-05-29 15:41:48,881 [INFO] Sleeping for 3600 seconds
+2025-05-29 15:43:11,329 [INFO] 🚀 Starting Sigma Analyzer (File Mode)
+2025-05-29 15:43:11,331 [INFO] Configuration: {
+  "LOG_DIR": "/var/log/sigma",
+  "COMPILED_RULES_DIR": "./compiled",
+  "INPUT_FILE": "/app/logs/scanner/mail_scanner.json",
+  "USE_FILE_INPUT": true,
+  "QUERY_WINDOW": 60,
+  "SLEEP_INTERVAL": 3600,
+  "ALERT_WEBHOOK": "",
+  "LOG_LEVEL": "INFO"
+}
+2025-05-29 15:43:11,335 [INFO] Analyzing logs from 2025-05-29 17:43:11.333018+00:00 to 2025-05-29 18:43:11.335303+00:00
+2025-05-29 15:43:11,337 [INFO] Sleeping for 3600 seconds
