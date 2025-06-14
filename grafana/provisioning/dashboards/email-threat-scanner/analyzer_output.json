@@ -1,0 +1,135 @@
+{
+  "id": null,
+  "title": "Clean Threat Dashboard",
+  "timezone": "browser",
+  "schemaVersion": 37,
+  "version": 1,
+  "refresh": "10s",
+  "style": "light",
+  "templating": {
+    "list": [
+      {
+        "name": "severity",
+        "type": "query",
+        "datasource": {"type": "grafana", "uid": "-- Grafana --"},
+        "definition": "label_values(severity)",
+        "includeAll": true,
+        "multi": true,
+        "current": {
+          "selected": true,
+          "text": ["All"],
+          "value": ["$__all"]
+        },
+        "refresh": 1
+      }
+    ]
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "panels": [
+    {
+      "type": "stat",
+      "title": "Total Threats (Last 6h)",
+      "gridPos": {"h": 4, "w": 24, "x": 0, "y": 0},
+      "id": 1,
+      "targets": [
+        {
+          "refId": "A",
+          "expr": "count_over_time({job=\"sigma_analyzer_results\"} |= \"\" [6h])",
+          "datasource": {"type": "loki", "uid": "-- Grafana --"}
+        }
+      ],
+      "options": {
+        "reduceOptions": {"calcs": ["lastNotNull"], "fields": "", "values": false},
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "center"
+      },
+      "fieldConfig": {"defaults": {"color": {"mode": "thresholds"}}}
+    },
+{
+  "type": "barchart",
+  "title": "Threats by Severity",
+  "gridPos": {"h": 8, "w": 12, "x": 0, "y": 4},
+  "id": 2,
+  "targets": [
+    {
+      "refId": "A",
+      "expr": "count_over_time({job=\"sigma_analyzer_results\"} |= \"severity\" [6h])",
+      "datasource": {"type": "loki", "uid": "-- Grafana --"}
+    }
+  ],
+  "options": {
+    "orientation": "vertical",
+    "tooltip": {"mode": "single"},
+    "legend": {"showLegend": false}
+  },
+  "fieldConfig": {"defaults": {"color": {"mode": "palette-classic"}}}
+},
+{
+  "type": "barchart",
+  "title": "Top 5 Detection Rules",
+  "gridPos": {"h": 8, "w": 12, "x": 12, "y": 4},
+  "id": 3,
+  "targets": [
+    {
+      "refId": "A",
+      "expr": "topk(5, count_over_time({job=\"sigma_analyzer_results\"} |= \"rule\" [6h]))",
+      "datasource": {"type": "loki", "uid": "-- Grafana --"}
+    }
+  ],
+  "options": {
+    "orientation": "horizontal",
+    "tooltip": {"mode": "single"},
+    "legend": {"showLegend": false}
+  },
+  "fieldConfig": {"defaults": {"color": {"mode": "palette-classic"}}}
+},
+
+    {
+      "type": "timeseries",
+      "title": "Threats Over Time",
+      "gridPos": {"h": 8, "w": 24, "x": 0, "y": 12},
+      "id": 4,
+      "targets": [
+        {
+          "refId": "A",
+          "expr": "sum by (__interval) (count_over_time({job=\"sigma_analyzer_results\"} |= \"\" [1m]))",
+          "datasource": {"type": "loki", "uid": "-- Grafana --"}
+        }
+      ],
+      "options": {
+        "legend": {"showLegend": false},
+        "tooltip": {"mode": "single"}
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "palette-classic"},
+          "custom": {"drawStyle": "line", "lineInterpolation": "smooth", "fillOpacity": 10}
+        }
+      }
+    },
+    {
+      "type": "logs",
+      "title": "Recent Critical Threats",
+      "gridPos": {"h": 10, "w": 24, "x": 0, "y": 20},
+      "id": 5,
+      "targets": [
+        {
+          "refId": "A",
+          "expr": "{job=\"sigma_analyzer_results\"} |= \"critical\"",
+          "datasource": {"type": "loki", "uid": "-- Grafana --"}
+        }
+      ],
+      "options": {
+        "showTime": true,
+        "wrapLogMessage": true,
+        "showLabels": false,
+        "enableLogDetails": true,
+        "prettifyLogMessage": true
+      }
+    }
+  ]
+}
