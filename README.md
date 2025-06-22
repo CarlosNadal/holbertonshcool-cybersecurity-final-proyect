@@ -82,35 +82,6 @@ docker-compose up --build -d
 
 ---
 
-# 📚 Project Structure
-
-```
-secure-email-scanner/
-├── docker-compose.yml
-├── postfix/
-│   ├── Dockerfile
-│   ├── main.cf
-│   └── master.cf
-├── scanner/
-│   ├── Dockerfile
-│   ├── scanner.py
-│   ├── yara_rules/
-│   └── quarantine/
-├── grafana/
-│   └── dashboards/
-├── promtail/
-│   └── config.yml
-├── loki/
-│   └── config.yaml
-├── README.md
-├── LICENSE
-└── docs/
-    ├── architecture.png
-    └── installation_guide.md
-```
-
----
-
 # 🛡️ Roadmap
 
 * Implement automatic quarantine cleanup
