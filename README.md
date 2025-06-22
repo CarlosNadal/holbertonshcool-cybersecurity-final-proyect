@@ -51,14 +51,14 @@ flowchart TD
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/toleman84/Yara_Final_Project.git
-cd Yara_Final_Project
+git clone git@github.com:CarlosNadal/holbertonshcool-cybersecurity-final-proyect.git
+cd holbertonshcool-cybersecurity-final-proyect
 ```
 
 2. Build and launch the containers:
 
 ```bash
-docker-compose up --build
+docker-compose up --build -d
 ```
 
 3. Access the Dashboard:
