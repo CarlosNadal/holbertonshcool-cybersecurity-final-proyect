@@ -104,7 +104,3 @@ Please follow the branch structure:
 
 ---
 
-# 🌟 Credits
-
-Project inspired by best practices in modern cloud-based email security.
-Developed by Carlos, Felipe, Gastón y Gustavo
