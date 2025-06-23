@@ -37,11 +37,11 @@ This project implements a modular architecture for receiving, analyzing, and vis
 
 ```mermaid
 flowchart TD
-    A       [🌐 Internet / External Senders] --> B[📮 Postfix SMTP Server (Docker)]
-    B -->   C[🔎 Content Filter → Python Scanner]
-    C -->   |Clean Email| D[📥 Local Delivery]
-    C -->   |Malware Detected| E[🚨 Quarantine + Alert System]
-    E -->   F[📊 Grafana Dashboard (Logs & Alerts)]
+    A["🌐 Internet / External Senders"] --> B["📮 Postfix SMTP Server (Docker)"]
+    B --> C["🔎 Content Filter → Python Scanner"]
+    C -->|Clean Email| D["📥 Local Delivery"]
+    C -->|Malware Detected| E["🚨 Quarantine + Alert System"]
+    E --> F["📊 Grafana Dashboard (Logs & Alerts)"]
 ```
 
 ---
@@ -51,14 +51,14 @@ flowchart TD
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/toleman84/Yara_Final_Project.git
-cd Yara_Final_Project
+git clone git@github.com:CarlosNadal/holbertonshcool-cybersecurity-final-proyect.git
+cd holbertonshcool-cybersecurity-final-proyect
 ```
 
 2. Build and launch the containers:
 
 ```bash
-docker-compose up --build
+docker-compose up --build -d
 ```
 
 3. Access the Dashboard:
@@ -79,35 +79,6 @@ docker-compose up --build
 * Incident alerts via Grafana and Promtail
 * Resilience: Auto-restart of critical services
 * Production-ready with private Docker network
-
----
-
-# 📚 Project Structure
-
-```
-secure-email-scanner/
-├── docker-compose.yml
-├── postfix/
-│   ├── Dockerfile
-│   ├── main.cf
-│   └── master.cf
-├── scanner/
-│   ├── Dockerfile
-│   ├── scanner.py
-│   ├── yara_rules/
-│   └── quarantine/
-├── grafana/
-│   └── dashboards/
-├── promtail/
-│   └── config.yml
-├── loki/
-│   └── config.yaml
-├── README.md
-├── LICENSE
-└── docs/
-    ├── architecture.png
-    └── installation_guide.md
-```
 
 ---
 
