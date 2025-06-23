@@ -26765,3 +26765,57 @@
 {"timestamp": 1750720137, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 33738) EOF received"}
 {"timestamp": 1750720137, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 33738) Connection lost during _handle_client()"}
 {"timestamp": 1750720137, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 33738) connection lost"}
+{"timestamp": 1750720142, "level": "INFO", "service": "scanner", "message": "Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)"}
+{"timestamp": 1750720142, "level": "INFO", "service": "scanner", "message": "Peer: ('127.0.0.1', 54782)"}
+{"timestamp": 1750720142, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 54782) handling connection"}
+{"timestamp": 1750720142, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 54782) EOF received"}
+{"timestamp": 1750720142, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 54782) Connection lost during _handle_client()"}
+{"timestamp": 1750720142, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 54782) connection lost"}
+{"timestamp": 1750720147, "level": "INFO", "service": "scanner", "message": "Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)"}
+{"timestamp": 1750720147, "level": "INFO", "service": "scanner", "message": "Peer: ('127.0.0.1', 54798)"}
+{"timestamp": 1750720147, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 54798) handling connection"}
+{"timestamp": 1750720147, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 54798) EOF received"}
+{"timestamp": 1750720147, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 54798) Connection lost during _handle_client()"}
+{"timestamp": 1750720147, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 54798) connection lost"}
+{"timestamp": 1750720152, "level": "INFO", "service": "scanner", "message": "Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)"}
+{"timestamp": 1750720152, "level": "INFO", "service": "scanner", "message": "Peer: ('127.0.0.1', 42032)"}
+{"timestamp": 1750720152, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 42032) handling connection"}
+{"timestamp": 1750720152, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 42032) EOF received"}
+{"timestamp": 1750720152, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 42032) Connection lost during _handle_client()"}
+{"timestamp": 1750720152, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 42032) connection lost"}
+{"timestamp": 1750720160, "level": "INFO", "service": "scanner", "message": "Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)"}
+{"timestamp": 1750720160, "level": "INFO", "service": "scanner", "message": "Peer: ('127.0.0.1', 48786)"}
+{"timestamp": 1750720160, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 48786) handling connection"}
+{"timestamp": 1750720160, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 48786) EOF received"}
+{"timestamp": 1750720160, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 48786) Connection lost during _handle_client()"}
+{"timestamp": 1750720160, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 48786) connection lost"}
+{"timestamp": 1750720165, "level": "INFO", "service": "scanner", "message": "Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)"}
+{"timestamp": 1750720165, "level": "INFO", "service": "scanner", "message": "Peer: ('127.0.0.1', 48788)"}
+{"timestamp": 1750720165, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 48788) handling connection"}
+{"timestamp": 1750720165, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 48788) EOF received"}
+{"timestamp": 1750720165, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 48788) Connection lost during _handle_client()"}
+{"timestamp": 1750720165, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 48788) connection lost"}
+{"timestamp": 1750720170, "level": "INFO", "service": "scanner", "message": "Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)"}
+{"timestamp": 1750720170, "level": "INFO", "service": "scanner", "message": "Peer: ('127.0.0.1', 46930)"}
+{"timestamp": 1750720170, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 46930) handling connection"}
+{"timestamp": 1750720170, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 46930) EOF received"}
+{"timestamp": 1750720170, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 46930) Connection lost during _handle_client()"}
+{"timestamp": 1750720170, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 46930) connection lost"}
+{"timestamp": 1750720175, "level": "INFO", "service": "scanner", "message": "Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)"}
+{"timestamp": 1750720175, "level": "INFO", "service": "scanner", "message": "Peer: ('127.0.0.1', 46938)"}
+{"timestamp": 1750720175, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 46938) handling connection"}
+{"timestamp": 1750720175, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 46938) EOF received"}
+{"timestamp": 1750720175, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 46938) Connection lost during _handle_client()"}
+{"timestamp": 1750720175, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 46938) connection lost"}
+{"timestamp": 1750720180, "level": "INFO", "service": "scanner", "message": "Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)"}
+{"timestamp": 1750720180, "level": "INFO", "service": "scanner", "message": "Peer: ('127.0.0.1', 47816)"}
+{"timestamp": 1750720180, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 47816) handling connection"}
+{"timestamp": 1750720180, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 47816) EOF received"}
+{"timestamp": 1750720180, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 47816) Connection lost during _handle_client()"}
+{"timestamp": 1750720180, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 47816) connection lost"}
+{"timestamp": 1750720185, "level": "INFO", "service": "scanner", "message": "Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)"}
+{"timestamp": 1750720185, "level": "INFO", "service": "scanner", "message": "Peer: ('127.0.0.1', 47832)"}
+{"timestamp": 1750720185, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 47832) handling connection"}
+{"timestamp": 1750720185, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 47832) EOF received"}
+{"timestamp": 1750720185, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 47832) Connection lost during _handle_client()"}
+{"timestamp": 1750720185, "level": "INFO", "service": "scanner", "message": "('127.0.0.1', 47832) connection lost"}
