@@ -82,15 +82,6 @@ docker-compose up --build -d
 
 ---
 
-# 🛡️ Roadmap
-
-* Implement automatic quarantine cleanup
-* Full Sigma detection integration
-* Real SMTP/TLS encryption support
-* Web portal for quarantine review
-
----
-
 # 👨‍💻 Contributions
 
 Pull Requests are welcome!
