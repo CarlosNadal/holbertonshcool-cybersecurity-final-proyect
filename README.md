@@ -41,7 +41,7 @@ flowchart TD
     C -->|"✅ Clean Email"| D["📥 Local Delivery"]
     C -->|"🚫 Malware Detected"| E["🚨 Quarantine + Alert System"]
     E --> F["📊 Grafana Dashboard"]
-
+```
 
 ---
 
