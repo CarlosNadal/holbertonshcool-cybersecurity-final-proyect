@@ -34,13 +34,13 @@ This project implements a modular architecture for receiving, analyzing, and vis
 
 ## General Diagram
 
-mermaid
+```mermaid
 flowchart TD
     A["🌐 Internet / External Senders"] --> B["📮 Postfix SMTP Server (Docker)"]
-    B --> C["🔎 Content Filter → Python Scanner"]
-    C -->|Clean Email| D["📥 Local Delivery"]
-    C -->|Malware Detected| E["🚨 Quarantine + Alert System"]
-    E --> F["📊 Grafana Dashboard (Logs & Alerts)"]
+    B --> C["🔎 Content Filter -> Python Scanner"]
+    C -->|"✅ Clean Email"| D["📥 Local Delivery"]
+    C -->|"🚫 Malware Detected"| E["🚨 Quarantine + Alert System"]
+    E --> F["📊 Grafana Dashboard"]
 
 
 ---
